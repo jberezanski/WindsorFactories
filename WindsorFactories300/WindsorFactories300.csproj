@@ -57,6 +57,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="..\WindsorFactories321\Controls.cs">
+      <Link>Controls.cs</Link>
+    </Compile>
     <Compile Include="..\WindsorFactories321\FactoryTests.cs">
       <Link>FactoryTests.cs</Link>
     </Compile>
@@ -66,20 +69,47 @@
     <Compile Include="..\WindsorFactories321\FooB.cs">
       <Link>FooB.cs</Link>
     </Compile>
+    <Compile Include="..\WindsorFactories321\FooC.cs">
+      <Link>FooC.cs</Link>
+    </Compile>
     <Compile Include="..\WindsorFactories321\FooConsumer.cs">
       <Link>FooConsumer.cs</Link>
+    </Compile>
+    <Compile Include="..\WindsorFactories321\FooD.cs">
+      <Link>FooD.cs</Link>
     </Compile>
     <Compile Include="..\WindsorFactories321\FooService.cs">
       <Link>FooService.cs</Link>
     </Compile>
+    <Compile Include="..\WindsorFactories321\Gizmo.cs">
+      <Link>Gizmo.cs</Link>
+    </Compile>
+    <Compile Include="..\WindsorFactories321\GizmoService.cs">
+      <Link>GizmoService.cs</Link>
+    </Compile>
     <Compile Include="..\WindsorFactories321\IFoo.cs">
       <Link>IFoo.cs</Link>
+    </Compile>
+    <Compile Include="..\WindsorFactories321\IFooConsumer.cs">
+      <Link>IFooConsumer.cs</Link>
     </Compile>
     <Compile Include="..\WindsorFactories321\IFooConsumerFactory.cs">
       <Link>IFooConsumerFactory.cs</Link>
     </Compile>
     <Compile Include="..\WindsorFactories321\IFooFactory.cs">
       <Link>IFooFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\WindsorFactories321\IFooService.cs">
+      <Link>IFooService.cs</Link>
+    </Compile>
+    <Compile Include="..\WindsorFactories321\IGizmo.cs">
+      <Link>IGizmo.cs</Link>
+    </Compile>
+    <Compile Include="..\WindsorFactories321\IGizmoFactory.cs">
+      <Link>IGizmoFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\WindsorFactories321\IGizmoService.cs">
+      <Link>IGizmoService.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
