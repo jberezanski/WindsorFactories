@@ -108,13 +108,13 @@ namespace WindsorFactories
             var f = ff.GetFooC();
             Trace.WriteLine(string.Format(CultureInfo.InvariantCulture, "{0} #{1} {2}", this.GetType().Name, this.GetHashCode(), "test, obtained fooC #" + f.GetHashCode() + " from factory #" + ff.GetHashCode()));
             
-            Trace.WriteLine(string.Format(CultureInfo.InvariantCulture, "{0} #{1} {2}", this.GetType().Name, this.GetHashCode(), "test, frobulating fooC #" + f.GetHashCode()));
-            f.Frobulate();
-            Trace.WriteLine(string.Format(CultureInfo.InvariantCulture, "{0} #{1} {2}", this.GetType().Name, this.GetHashCode(), "test, frobulated fooC #" + f.GetHashCode()));
+            //Trace.WriteLine(string.Format(CultureInfo.InvariantCulture, "{0} #{1} {2}", this.GetType().Name, this.GetHashCode(), "test, frobulating fooC #" + f.GetHashCode()));
+            //f.Frobulate();
+            //Trace.WriteLine(string.Format(CultureInfo.InvariantCulture, "{0} #{1} {2}", this.GetType().Name, this.GetHashCode(), "test, frobulated fooC #" + f.GetHashCode()));
             
-            Trace.WriteLine(string.Format(CultureInfo.InvariantCulture, "{0} #{1} {2}", this.GetType().Name, this.GetHashCode(), "test, returning fooC #" + f.GetHashCode() + " to factory #" + ff.GetHashCode()));
-            ff.Release(f);
-            Trace.WriteLine(string.Format(CultureInfo.InvariantCulture, "{0} #{1} {2}", this.GetType().Name, this.GetHashCode(), "test, returned fooC #" + f.GetHashCode() + " to factory #" + ff.GetHashCode()));
+            //Trace.WriteLine(string.Format(CultureInfo.InvariantCulture, "{0} #{1} {2}", this.GetType().Name, this.GetHashCode(), "test, returning fooC #" + f.GetHashCode() + " to factory #" + ff.GetHashCode()));
+            //ff.Release(f);
+            //Trace.WriteLine(string.Format(CultureInfo.InvariantCulture, "{0} #{1} {2}", this.GetType().Name, this.GetHashCode(), "test, returned fooC #" + f.GetHashCode() + " to factory #" + ff.GetHashCode()));
 
             Trace.WriteLine(string.Format(CultureInfo.InvariantCulture, "{0} #{1} {2}", this.GetType().Name, this.GetHashCode(), "test, releasing fooFactory #" + ff.GetHashCode()));
             this.container.Release(ff);
