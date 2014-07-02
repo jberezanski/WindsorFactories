@@ -1,0 +1,17 @@
+﻿IDisposable typed factories are not multiple Dispose() safe (!)
+IDisposable typed factories can be disposed before being released
+IDisposable typed factories cannot be disposed after having been released (!)
+
+released typed factories dispose all not yet released fabricated objects
+    and the whole transitive closure of their non-singleton dependencies
+same for factories which are dependencies of released components
+this happens regardless of whether the factory is IDisposable or not
+if a fabricated component is not released, its dependencies will be disposed twice when the factory is released (!)
+
+disposal of the transitive dependency closure disposes dependencies of longer-lived components (!)
+given a dependency graph:
+FF(T) -> F(T) -> GS(S) -> GF(T)
+releasing FF will dispose GF, breaking GS!
+
+TODO: check above scenario when GF is not a factory
+TODO: investigate Singleton factories
